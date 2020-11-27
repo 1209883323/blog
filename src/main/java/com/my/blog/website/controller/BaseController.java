@@ -22,9 +22,10 @@ public abstract class BaseController {
      */
     public String render(String viewName) {
         return THEME + "/" + viewName;
-    }
+    }//string字符串。返回映射路径寻找thymelraf模板方法
 
-    public BaseController title(HttpServletRequest request, String title) {
+
+    public BaseController title(HttpServletRequest request, String title) { //tietle方法
         request.setAttribute("title", title);
         return this;
     }
